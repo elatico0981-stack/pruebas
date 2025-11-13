@@ -1,0 +1,234 @@
+/* ===== HERO SECTION ===== */
+.hero {
+  position: relative;
+  height: 100vh; /* ocupa el 90% de la altura de la pantalla */
+  background: url('../imagenes/Fondo_index2.png') no-repeat center center/cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: white;
+}
+
+/* Capa oscura encima de la imagen */
+.hero::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(98, 93, 93, 0.55);
+  z-index: 0;
+}
+
+.hero .overlay {
+  position: relative;
+  z-index: 1;
+  padding: 1px;
+  max-width: 1000px;
+}
+
+.hero p {
+  margin-top: 0.2em;
+  margin-bottom: 1.2em;
+  font-size: 1.1em;
+}
+
+/* ===== MENÚ FIJO SUPERIOR ===== */
+.menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: rgba(255, 255, 255, 0.2); /* fondo semitransparente */
+  backdrop-filter: blur(5px); /* efecto de desenfoque elegante */
+  z-index: 1000; /* siempre encima del hero */
+  padding: 10px 0;
+}
+
+.menu-navegacion {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  margin: 0;
+  padding: 0;
+}
+
+.menu-navegacion li a {
+  color: #0119f5;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 1.1rem;
+  transition: color 0.3s;
+}
+
+.menu-navegacion li a:hover {
+  color: #000000;
+}
+
+/* Títulos */
+.hero h1 {
+  font-size: 2.8em;
+  letter-spacing: 2px;
+  margin: 0.2em;
+  font-weight: 700;
+  color: #0a19e1;
+  padding: 1px;
+}
+
+.hero h2 {
+  font-size: 2.2em;
+  color: #0a19e1; 
+  margin: 0.3em;
+  padding: 1px;
+}
+
+.hero p {
+  font-size: 1.6em;
+  line-height: 1.6;
+  margin-top: 0.3em;
+  margin-bottom: 1em;
+  padding: 1px;
+  color: #030000
+}
+
+.hero h1, .hero h2, .hero p {
+  text-shadow: #ffffff 10px 1px 10px;
+  margin: 10px;
+  padding: 5px;
+}
+
+/* Botón principal */
+.btn-primario {
+  background-color: #03039c; /* azul institucional */
+  color: white;
+  padding: 12px 35px;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: 0.3s;
+  font-size: 1em;
+}
+
+.btn-primario:hover {
+  background-color: #0b3e91;
+  transform: translateY(-3px);
+}
+
+/* Sección de servicios */
+.servicios {
+  padding: 30px 20px;
+  background-color: #f8f9fb;
+  text-align: center;
+}
+
+.servicios h2 {
+  font-size: 2em;
+  color: #002c77;
+  margin-bottom: 10px;
+}
+
+.intro-servicios {
+  max-width: 700px;
+  margin: 0 auto 50px;
+  color: #333;
+  font-size: 1.1em;
+}
+
+.contenedor-servicios {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.tarjeta-servicio {
+  background-color: #fff;
+  border-top: 5px solid #002c77;
+  border-radius: 15px;
+  padding: 25px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.tarjeta-servicio:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 15px rgba(0,0,0,0.2);
+}
+
+.tarjeta-servicio h3 {
+  color: #002c77;
+  margin-bottom: 10px;
+  font-size: 1.4em;
+}
+
+.tarjeta-servicio p {
+  color: #444;
+  font-size: 1em;
+  line-height: 1.5;
+}
+
+.cta-servicio {
+  margin-top: 60px;
+  text-align: center;
+}
+
+.cta-servicio p {
+  font-size: 1.2em;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.btn-primario {
+  display: inline-block;
+  background-color: #002c77;
+  color: #fff;
+  padding: 12px 30px;
+  border-radius: 30px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+.btn-primario:hover {
+  background-color: #0040b0;
+  transform: translateY(-3px);
+}
+
+nav {
+    width: 100%; /* - Fuerza al nav a ocupar todo el ancho y bajar a la siguiente línea */
+    margin-top: 0px; /* Espacio superior para separar el nav del contenido de arriba */
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav ul li a {
+    color: #0119f5;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 1.3rem; /*- Aumenta el tamaño de fuente del nav */
+    transition: color 0.3s; 
+}
+
+nav ul li a:hover {
+    color: #000207; /* dorado al pasar el mouse */
+}
+
+
+/* Footer styles */
+
+.info-footer {
+  text-align: center;
+  font-size: 15px;
+  color: #555;
+  margin-top: 10px;
+}

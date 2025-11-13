@@ -1,0 +1,121 @@
+/* ====== ESTILOS GENERALES ====== */
+body {
+  background-color: #d6d8da;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #100202;
+  margin: 0;
+  padding: 0;
+}
+
+/* ====== ENCABEZADO ====== */
+h1 {
+  color: #0056b3;
+  text-align: center;
+  margin-top: 40px;
+}
+h2 {
+  color: #007bff;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* ====== PÁRRAFOS ====== */
+p {
+  width: 80%;
+  margin: 10px auto;
+  line-height: 1.6;
+  text-align: justify;
+}
+
+.tarjeta {
+  background-color: rgb(143, 143, 143); /* Color de fondo gris claro para destacar el recuadro */
+  width: 90%;             /* La tarjeta ocupará el 90% del ancho del contenedor (por ejemplo, la pantalla) */
+  max-width: 500px;       /* Pero nunca será más ancha de 500 píxeles, aunque el 90% sea mayor */
+  margin: 30px auto;      /* Agrega un margen superior e inferior de 30px; "auto" a los lados centra la tarjeta horizontalmente */
+  padding: 25px;          /* Espacio interno entre el borde de la tarjeta y su contenido */
+  border-radius: 15px;    /* Bordes redondeados (15 píxeles de curvatura) */
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2); /* Sombra suave debajo de la tarjeta para dar efecto de elevación */
+text-align: center;     /* Centra horizontalmente el texto dentro de la tarjeta */
+}
+
+/* ====== BARRA DE NAVEGACIÓN ====== */
+
+nav {                                   /* Estilo general del contenedor <nav> */
+  background-color: #af3ef1;               /* Fondo oscuro (gris casi negro) */
+  padding: 10px 0;                      /* Espacio arriba y abajo dentro del menú */
+}
+
+nav ul {                                /* Estilos para la lista que contiene los enlaces */
+  list-style: none;                     /* Quita los puntos (viñetas) de la lista */
+  margin: 0;                            /* Elimina el margen exterior predeterminado */
+  padding: 0;                           /* Elimina el espacio interno predeterminado */
+  display: flex;                        /* Coloca los elementos en una fila horizontal */
+  justify-content: center;              /* Centra todo el grupo de enlaces horizontalmente */
+  gap: 30px;                            /* Espacio de 30px entre cada elemento del menú */
+}
+
+nav li {                                /* Estilo individual para cada elemento de la lista */
+  display: inline;                      /* Los coloca uno al lado del otro (horizontal) */
+}
+
+nav a {                                 /* Estilo para los enlaces del menú */
+  color: rgb(16, 0, 0);                         /* Texto blanco para contraste sobre fondo oscuro */
+  text-decoration: none;                /* Quita el subrayado del enlace */
+  font-weight: bold;                    /* Hace el texto más grueso (negrita) */
+  font-size: 18px;                      /* Tamaño de fuente de los enlaces */
+  display: inline-block;                /* Permite usar transformaciones como scale() */
+  transition: transform 0.3s ease,      /* Suaviza el efecto de agrandamiento */
+              color 0.3s ease;          /* Suaviza también el cambio de color */
+}
+
+/* Efecto hover: se activa al pasar el cursor sobre el enlace */
+nav a:hover {
+  color: #ffd700;                       /* Cambia el color del texto a dorado brillante */
+  transform: scale(1.1);                /* Aumenta el tamaño un 10% para efecto de “zoom” */
+  text-decoration: underline;           /* Añade subrayado solo mientras el cursor está encima */
+}
+
+/* ====== PIE DE PÁGINA ====== */
+footer {
+  background-color: #000001;
+  color: rgb(227, 243, 7);
+  text-align: center;
+  padding: 10px 0;
+  margin-top: 40px;
+}
+
+/* ====== ENCABEZADO CON LOGOS ====== */
+.encabezado {
+  display: flex;                     /* Activa el diseño en línea */
+  align-items: center;               /* Centra verticalmente */
+  justify-content: space-between;    /* Logo izquierda, título centro, logo derecha */
+  background-color: #111;            /* Fondo oscuro opcional */
+  padding: 10px 20px;
+}
+
+.encabezado h1 {
+  color: #ffd700;                    /* Dorado para resaltar */
+  text-align: center;
+  flex: 1;                           /* Ocupa el espacio central */
+  font-size: 28px;
+  margin: 0;
+}
+
+.logo-izq, .logo-der {
+  width: 80px;
+  height: 80px;
+}
+
+/* Opcional: efecto de hover en los logos */
+.logo-izq:hover, .logo-der:hover {
+  transform: scale(1.1);
+  transition: transform 0.3s ease;
+}
+
+/* ====== TABLAS ====== */
+table {
+  width: 80%;
+  margin: 20px auto;
+  border-collapse: collapse;
+  text-align: center;
+}
