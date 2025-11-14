@@ -2,7 +2,7 @@
 .hero {
   position: relative;
   height: 100vh; /* ocupa el 90% de la altura de la pantalla */
-  background: url('../../imagenes/asesroai.png') no-repeat center center/cover;
+  background: url('../../imagenes/contacto.png') no-repeat center center/cover;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -82,7 +82,7 @@
 .hero h2 {
   font-size: 2.2em;
   color: #0a19e1; 
-  margin: 0.3em;
+  margin: 5px;
   padding: 1px;
 }
 
@@ -140,92 +140,92 @@
   color: #333;
   font-size: 1.1em;
 }
+.contact-options {
+  text-align: center;
+  padding: 10px 20px;
+  background-color: #f5f5f5;
+}
 
-.contenedor-servicios {
+.contact-options h2 {
+  font-size: 2em;
+  margin-bottom: 30px;
+  color: #002060;
+}
+
+.contact-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 30px;
+  gap: 25px;
   max-width: 1000px;
   margin: 0 auto;
 }
 
-.tarjeta-servicio {
-  background-color: #fff;
-  border-top: 5px solid #002c77;
-  border-radius: 15px;
+.contact-card {
+  background: white;
   padding: 25px;
+  border-radius: 15px;
   box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.tarjeta-servicio:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 6px 15px rgba(0,0,0,0.2);
-}
-
-.tarjeta-servicio h3 {
-  color: #002c77;
+.contact-card h3 {
+  color: #002060;
   margin-bottom: 10px;
-  font-size: 1.4em;
 }
 
-.tarjeta-servicio p {
-  color: #444;
-  font-size: 1em;
+.contact-card p {
+  margin-bottom: 15px;
   line-height: 1.5;
 }
 
-.cta-servicio {
-  margin-top: 10px;
+.contact-form {
+  padding: 10px 20px;
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: left;
+}
+
+.contact-form h2 {
   text-align: center;
+  color: #002060;
+  margin-bottom: 30px;
 }
 
-.cta-servicio p {
-  font-size: 1.2em;
-  color: #333;
-  margin-bottom: 20px;
+.form-row {
+  margin-bottom: 15px;
 }
 
-.btn-primario {
+label {
+  display: block;
+  margin-bottom: 6px;
+  font-weight: bold;
+}
+
+input, textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+}
+
+.btn {
   display: inline-block;
-  background-color: #002c77;
-  color: #fff;
-  padding: 12px 30px;
-  border-radius: 30px;
-  font-weight: 600;
+  background-color: #002060;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 25px;
   text-decoration: none;
-  transition: all 0.3s ease;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  transition: background 0.3s;
 }
 
-.btn-primario:hover {
-  background-color: #0040b0;
-  transform: translateY(-3px);
+.btn:hover {
+  background-color: #0040a0;
 }
 
-nav {
-    width: 100%; /* - Fuerza al nav a ocupar todo el ancho y bajar a la siguiente línea */
-    margin-top: 0px; /* Espacio superior para separar el nav del contenido de arriba */
+.contact-info {
+  margin-top: 40px;
+  text-align: center;
+  color: #333;
 }
-
-nav ul {
-    list-style: none;
-    display: flex;
-    gap: 20px;
-}
-
-nav ul li a {
-    color: #0119f5;
-    text-decoration: none;
-    font-weight: 500;
-    font-size: 1.3rem; /*- Aumenta el tamaño de fuente del nav */
-    transition: color 0.3s; 
-}
-
-nav ul li a:hover {
-    color: #000207; /* dorado al pasar el mouse */
-}
-
 
 /* Footer styles */
 
